@@ -26,18 +26,22 @@ body {
   align-items: center;
   justify-content: space-between;
   justify-self: center;
+  flex-direction: column;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .menu {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .menu img {
@@ -81,4 +85,56 @@ ul li a {
   border: none;
   border-radius: 0.313rem;
   margin-left: 1.625rem;
+}
+
+.content {
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+  padding-top: 6.438rem;
+}
+
+.content-main {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-size: 3.875rem;
+  font-weight: 800;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #81afdd;
+  padding-top: 2.063rem;
+  padding-bottom: 3.25rem;
+}
+
+.title input {
+  border: none;
+  width: 39.375rem;
+  height: 3.938rem;
+}
+
+.input button {
+  width: 10.875rem;
+  height: 4.563rem;
+  background: var(--color-button);
+  border: none;
+  border-radius: 0.313rem;
+  position: absolute;
+}
+
+.image-content img {
+  width: 41.75rem;
+  height: 43.75rem;
 }
