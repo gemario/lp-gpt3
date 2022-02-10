@@ -11,11 +11,14 @@
 
 body {
   font-family: 'Manrope', sans-serif;
-  background: #031834;
+  background: #040c18;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(assets/blur-background-left.png);
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 
 .container {
@@ -111,7 +114,7 @@ ul li a {
   -webkit-text-fill-color: transparent;
 }
 
-.title p {
+.title h3 {
   font-size: 1.25rem;
   font-weight: 400;
   color: #81afdd;
@@ -119,22 +122,104 @@ ul li a {
   padding-bottom: 3.25rem;
 }
 
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  color: #3d6184;
+  padding-left: 2rem;
+  font-size: 1.25rem;
+  outline: none;
+}
+
 .title input {
   border: none;
   width: 39.375rem;
   height: 3.938rem;
+  background: #052d56;
+  opacity: 0.5;
 }
 
 .input button {
   width: 10.875rem;
-  height: 4.563rem;
+  height: 100%;
   background: var(--color-button);
   border: none;
   border-radius: 0.313rem;
-  position: absolute;
+  color: var(--text-color-links);
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .image-content img {
   width: 41.75rem;
   height: 43.75rem;
+  transform: translate(16%, -15%);
+}
+
+.persons {
+  width: 100%;
+  display: flex;
+  margin-top: 2.375rem;
+  align-items: center;
+}
+
+.persons p {
+  font-size: 0.75rem;
+  color: var(--text-color-links);
+  margin-left: 0.875rem;
+}
+
+.companies {
+  padding: 4.938rem 0 7.938rem 0;
+}
+
+.logos {
+  display: flex;
+  gap: 2.938rem;
+}
+
+section {
+  background-color: #042c54;
+}
+
+hr {
+  width: 2.375rem;
+  height: 0.188rem;
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+    #ffffff;
+  border: 0;
+}
+
+.header-info {
+  display: flex;
+  padding: 3.563rem 4.563rem 1.875rem 4.563rem;
+}
+
+.title-info {
+  font-size: 1.5rem;
+  color: var(--text-color-links);
+  font-weight: 800;
+  margin-right: 9.625rem;
+  width: 100%;
+}
+
+.subtitle-info {
+  color: #81afdd;
+}
+
+.middle-info {
+  display: flex;
+  padding: 0 3.563rem 5.75rem 3.563rem;
+}
+
+.title-middle {
+  font-size: 2.125rem;
+  font-weight: 800;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
