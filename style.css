@@ -120,6 +120,7 @@ ul li a {
   color: #81afdd;
   padding-top: 2.063rem;
   padding-bottom: 3.25rem;
+  max-width: 554px;
 }
 
 .input {
@@ -182,8 +183,27 @@ input {
   gap: 2.938rem;
 }
 
-section {
+.infos {
+  max-width: 1170px;
+  background-image: url(assets/blur-infos-top-left.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: relative;
   background-color: #042c54;
+}
+
+.infos::after {
+  content: '';
+  background-image: url(assets/blur-info-right-bottom.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section {
 }
 
 hr {
@@ -192,6 +212,7 @@ hr {
   background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
     #ffffff;
   border: 0;
+  margin-bottom: 0.625rem;
 }
 
 .header-info {
@@ -214,6 +235,9 @@ hr {
 .middle-info {
   display: flex;
   padding: 0 3.563rem 5.75rem 3.563rem;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .title-middle {
@@ -222,4 +246,38 @@ hr {
   background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  max-width: 29.375rem;
+}
+
+.subtitle-middle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ff8a71;
+  margin-left: auto;
+}
+
+.footer-info {
+  display: flex;
+  width: 100%;
+  padding: 0 3.563rem 3.938rem 3.563rem;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-color-links);
+  margin-bottom: 1.625rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #81afdd;
+}
+
+.chatbots,
+.knowledgebase,
+.education {
+  max-width: 334px;
 }
