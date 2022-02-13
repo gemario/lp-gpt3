@@ -190,6 +190,7 @@ input {
   background-position: top left;
   position: relative;
   background-color: #042c54;
+  filter: drop-shadow(20px 10px 5px rgb(0, 0, 0, 0.5));
 }
 
 .infos::after {
@@ -280,4 +281,148 @@ h3 {
 .knowledgebase,
 .education {
   max-width: 334px;
+}
+
+.table {
+  padding-top: 12.5rem;
+  display: flex;
+  max-width: 1170px;
+  position: relative;
+}
+
+.infos-table-title {
+  font-size: 2.125rem;
+  font-weight: 800;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 26.625rem;
+  margin-right: 8.625rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: end;
+}
+
+.card-title {
+  min-width: 11.25rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--text-color-links);
+  margin-right: 6.25rem;
+  margin-bottom: 3.25rem;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #81afdd;
+  width: 100%;
+  padding-bottom: 3.25rem;
+}
+
+#section-table-background {
+  width: 48.563rem;
+  height: 48.563rem;
+  position: absolute;
+  background-image: url(assets/blur-section-infos-table.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: contain;
+  left: -20vw;
+  top: 0;
+}
+
+.vr-image {
+  max-width: 65.25rem;
+  display: flex;
+  padding-top: 2.813rem;
+}
+
+figure {
+  margin-right: 1.188rem;
+}
+
+figure img {
+  width: 34.125rem;
+  height: 37.938rem;
+}
+
+.text-right-figure {
+  padding-top: 15.625rem;
+}
+
+.text-right-figure h1 {
+  font-size: 2.125rem;
+  font-weight: 800;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 1.438rem;
+}
+
+.text-right-figure h3:first-child {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #71e5ff;
+  padding-bottom: 0.625rem;
+}
+
+.text-right-figure h3:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #71e5ff;
+}
+
+.text-right-figure h3:last-child {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ff8a71;
+  padding-top: 1.938rem;
+}
+
+.section-register {
+  max-width: 73.125rem;
+  margin-top: 9.688rem;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  width: 100%;
+  height: 10.813rem;
+  border-radius: 0.688rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-section-register {
+  padding: 2.875rem;
+}
+
+.text-section-register h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2.813rem;
+  color: #000;
+}
+
+.text-section-register h3 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #0e0e0e;
+}
+
+.button-section-register {
+  display: flex;
+  align-items: center;
+  margin-right: 2.375rem;
+}
+
+.button-section-register button {
+  border: none;
+  background: #000;
+  border-radius: 2.5rem;
+  width: 11.813rem;
+  height: 3.75rem;
+  color: var(--text-color-links);
+  font-size: 1.125rem;
 }
