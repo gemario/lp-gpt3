@@ -19,13 +19,13 @@ body {
   background-image: url(assets/blur-background-left.png);
   background-repeat: no-repeat;
   background-position: top left;
+  overflow-x: hidden;
 }
 
 .container {
   display: flex;
   max-width: 1440px;
   margin-top: 3.438rem;
-  margin-bottom: 8.438rem;
   align-items: center;
   justify-content: space-between;
   justify-self: center;
@@ -95,6 +95,19 @@ ul li a {
   align-items: space-between;
   flex-direction: column;
   padding-top: 6.438rem;
+  position: relative;
+}
+
+#background-right-content {
+  width: 701px;
+  height: 496px;
+  position: absolute;
+  background-image: url(/assets/blur-backgroud-right.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+  right: -20vw;
+  top: 40vh;
 }
 
 .content-main {
@@ -438,11 +451,14 @@ figure img {
 }
 
 .blog-title h1 {
-  font-size: 2.125rem;
+  font-size: 62px;
   font-weight: 800;
+  line-height: 75px;
   background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: 710px;
+  height: 160px;
 }
 
 .articles {
@@ -544,10 +560,14 @@ figure img {
   background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: 870px;
+  height: 180px;
+  margin: 0 auto;
 }
 
 .title-footer button {
   margin-top: 64px;
+  margin-bottom: 170px;
   border: 1px solid #fff;
   font-size: 18px;
   background: #031b34;
@@ -571,4 +591,50 @@ figure img {
   width: 118px;
   height: 30px;
   margin-bottom: 25px;
+}
+
+.navigation-logo h3 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.navigation-menu {
+  display: flex;
+  margin-left: 237px;
+  gap: 180px;
+  width: 100%;
+}
+
+.links-menu ul,
+.company-menu ul,
+.get-in-touch-menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.links-menu li,
+.company-menu li,
+.get-in-touch-menu li {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-color-links);
+}
+
+.links-menu h3,
+.company-menu h3,
+.get-in-touch-menu h3 {
+  font-size: 14px;
+  color: var(--text-color-links);
+  font-weight: 700;
+  padding-bottom: 34px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 82px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-color-links);
+  padding-bottom: 26px;
 }
